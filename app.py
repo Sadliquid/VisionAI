@@ -95,7 +95,7 @@ def granular_analysis_to_resolve_tie(file_name, image_path, tied_categories):
 
     except Exception as e:
         return {'error': str(e)}
-    
+
 def fetch_labels(image_path):
     client = vision.ImageAnnotatorClient()
 
@@ -136,7 +136,7 @@ def get_labels():
     total_files = len(files)
     successfull_files = 0
     error_files = []
-    
+
     for file in files:
         if file.filename == '':
             continue  # Skip empty filenames
