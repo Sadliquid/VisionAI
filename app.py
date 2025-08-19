@@ -13,9 +13,6 @@ CORS(app)
 with open('category_map.json', 'r') as f:
     category_map = json.load(f)
 
-with open('secondary_map.json', 'r') as f:
-    secondary_map = json.load(f)
-
 def optimize_image(image_path, max_size=(800, 800)):
     with Image.open(image_path) as img:
         img.thumbnail(max_size)
